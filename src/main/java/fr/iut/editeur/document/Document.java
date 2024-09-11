@@ -26,7 +26,7 @@ public class Document {
 
     public void clear(){
         this.texte = "";
-    }//bug
+    }
 
     @Override
     public String toString() {
@@ -41,5 +41,18 @@ public class Document {
 
     public void effacer(){
 
+    }
+
+    public void majuscules(int debut, int fin) {
+
+        String partie = texte.substring(debut, fin);
+        partie =partie.toUpperCase();
+        remplacer(debut, fin-1, partie);
+    }
+    public void minuscules(int debut, int fin) {
+
+        String partie = texte.substring(debut, fin);
+        partie =partie.toLowerCase();
+        remplacer(debut, fin-1, partie);
     }
 }

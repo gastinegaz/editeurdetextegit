@@ -4,7 +4,6 @@ import fr.iut.editeur.document.Document;
 
 public class CommandeAjouter extends CommandeDocument {
 
-
     public CommandeAjouter(Document document, String[] parameters) {
         super(document, parameters);
     }
@@ -20,4 +19,8 @@ public class CommandeAjouter extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "Commande pour ajouter du texte au document.";
+    }
 }

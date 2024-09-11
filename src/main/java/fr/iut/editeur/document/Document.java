@@ -20,6 +20,14 @@ public class Document {
         this.texte += texte;
     }
 
+    public void effecer(String texte){
+        this.texte.replace(this.texte,texte);
+    }
+
+    public void clear(){
+        this.texte = "";
+    }//bug
+
     @Override
     public String toString() {
         return this.texte;
@@ -31,4 +39,7 @@ public class Document {
         texte = partieGauche + remplacement + partieDroite;
     }
 
+    public void effacer(){
+
+    }
 }

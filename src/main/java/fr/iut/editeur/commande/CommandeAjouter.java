@@ -22,5 +22,6 @@ public class CommandeAjouter extends CommandeDocument {
     @Override
     public String getDescriptionCommande() {
         return "Commande pour ajouter du texte au document.";
+
     }
 }
